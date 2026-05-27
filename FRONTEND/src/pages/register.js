@@ -44,7 +44,7 @@ function Register() {
         try {
 
             const response = await fetch(
-                "http://127.0.0.1:8000/register",
+                "https://complaint-management-with-css.onrender.com/register",
 
                 {
                     method: "POST",

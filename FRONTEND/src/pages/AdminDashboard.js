@@ -41,7 +41,8 @@ function AdminDashboard() {
     const fetchComplaints = () => {
 
         fetch(
-            "http://127.0.0.1:8000/complaints"
+            // "http://127.0.0.1:8000/complaints"
+            "https://complaint-management-with-css.onrender.com/complaints"
         )
         .then(res => res.json())
         .then(data => {
@@ -117,7 +118,7 @@ function AdminDashboard() {
 
         await fetch(
 
-            `http://127.0.0.1:8000/complaints/${complaint_id}/status`,
+            `https://complaint-management-with-css.onrender.com/complaints/${complaint_id}/status`,
 
             {
 

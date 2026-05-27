@@ -56,7 +56,7 @@ function UserDashboard() {
     const fetchComplaints = () => {
 
         fetch(
-            `http://127.0.0.1:8000/complaints/user/${user_id}`
+            `https://complaint-management-with-css.onrender.com/complaints/user/${user_id}`
         )
         .then(res => res.json())
         .then(data => {
@@ -139,7 +139,7 @@ function UserDashboard() {
         try {
 
             await fetch(
-                "http://127.0.0.1:8000/complaints",
+                "https://complaint-management-with-css.onrender.com/complaints",
                 {
                     method: "POST",
                     body: formData
@@ -505,7 +505,7 @@ function UserDashboard() {
 
                                             <img
                                                 src={
-                                                    `http://127.0.0.1:8000/uploads/${c.image_path}`
+                                                    `https://complaint-management-with-css.onrender.com/uploads/${c.image_path}`
                                                 }
                                                 alt="complaint"
                                                 className="mt-4 rounded-xl w-full h-52 object-cover"
