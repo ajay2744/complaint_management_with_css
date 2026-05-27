@@ -1,0 +1,21 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Database
+*.db
+
+# Node
+node_modules/
+.cache/
+
+# React build
+dist/
+build/
+
+# IDE
+.vscode/
+
+# Environment
+.env
